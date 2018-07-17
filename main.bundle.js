@@ -1381,6 +1381,8 @@ var ToolbarComponent = /** @class */ (function () {
                         _a.mapAddress = _b.sent();
                         this._bindMapEvents();
                         this.snackBar.open("You join a new map!", "", { duration: 2000 });
+                        this.mapName = address.match(/[\/]?([^\/]+)$/)[1];
+                        this.mapReady = true;
                         return [3 /*break*/, 4];
                     case 3:
                         error_2 = _b.sent();
